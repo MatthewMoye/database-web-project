@@ -3,15 +3,6 @@ DROP DATABASE IF EXISTS CIDS;
 CREATE DATABASE CIDS;
 USE CIDS;
 
--- Look into using Engine thing for references
-/*
-When you omit the ENGINE option, the default storage engine is used. 
-The default engine is InnoDB in MySQL 8.0. 
-You can specify the default engine by using the --default-storage-engine server startup option, 
-or by setting the default-storage-engine option in the my.cnf configuration file. 
-You can set the default storage engine for the current session by setting the default_storage_engine variable: 
-SET default_storage_engine=NDBCLUSTER;
-*/
 -- Government Officials and Project Managers will be listed here
 CREATE TABLE Users(
     UserID          INT             NOT NULL AUTO_INCREMENT,
